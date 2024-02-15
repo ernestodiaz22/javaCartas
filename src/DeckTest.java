@@ -1,6 +1,6 @@
 import cardsCollections.*;
 
-public class Main {
+public class DeckTest {
     public static void main(String[] args) {
         final String ANSI_RESET = "\u001B[0m";
         final String ANSI_BLACK = "\u001B[30m";
@@ -22,10 +22,10 @@ public class Main {
         System.out.println("\u2666 This should be a Diamonds suit symbol.");
         System.out.println("\u2660 This should be a Spades suit symbol.");
 
-        ClassCard naipe1 = new ClassCard(Suit.DIAMONDS,CardRank.valueOf("TWO"));
-        ClassCard naipe2 = new ClassCard(Suit.HEARTS,CardRank.valueOf("Q"));
-        ClassCard naipe3= new ClassCard(Suit.CLUBS,CardRank.valueOf("THREE"));
-        ClassCard naipe4 = new ClassCard(Suit.SPADES,CardRank.valueOf("J"));
+        Card naipe1 = new Card(Suit.DIAMONDS,CardRank.valueOf("TWO"));
+        Card naipe2 = new Card(Suit.HEARTS,CardRank.valueOf("Q"));
+        Card naipe3= new Card(Suit.CLUBS,CardRank.valueOf("THREE"));
+        Card naipe4 = new Card(Suit.SPADES,CardRank.valueOf("J"));
 
 
         System.out.println(naipe1.toString() + "\n" + naipe2.toString() + "\n" + naipe3.toString() + "\n" + naipe4.toString());
